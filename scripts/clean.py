@@ -3,7 +3,7 @@ from pathlib import Path
 
 # ── Build Paths Dynamically ─────────────────────────────────────────────────
 # Find the folder where THIS script lives
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent 
 
 # Input file  → data/raw/retail_dataset.csv  (created by extract.py)
 INPUT_FILE = BASE_DIR / "data" / "raw" / "retail_dataset.csv"

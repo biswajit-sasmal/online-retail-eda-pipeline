@@ -7,7 +7,7 @@ from pathlib import Path
 # .resolve()     → convert to an absolute path (no "../" tricks)
 # .parent        → go up one folder (the folder where this script lives)
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Now build the path to the "data/raw" folder relative to this script
 OUTPUT_DIR = BASE_DIR / "data" / "raw"

@@ -1,12 +1,32 @@
 from ucimlrepo import fetch_ucirepo
 import pandas as pd
+from pathlib import Path
 
-# Fetch the Dataset
-data = fetch_ucirepo(id = 352)
+# ── Step 1: Build the output path dynamically ──────────────────────────────
+# Path(__file__) → the current script's full file path
+# .resolve()     → convert to an absolute path (no "../" tricks)
+# .parent        → go up one folder (the folder where this script lives)
 
+BASE_DIR = Path(__file__).resolve().parent
+
+# Now build the path to the "data/raw" folder relative to this script
+OUTPUT_DIR = BASE_DIR / "data" / "raw"
+
+# Create all missing folders automatically (no error if they already exist)
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+# Full path to the final CSV file
+OUTPUT_FILE = OUTPUT_DIR / "retail_dataset.csv"
+
+# ── Step 2: Fetch the dataset ───────────────────────────────────────────────
+print("Fetching dataset from UCI ML Repository...")
+
+data = fetch_ucirepo(id=352)
 df = data.data.original
 
-# Save the dataset to a CSV file
-df.to_csv(r"C:\Users\biswa\Downloads\Projects & Notes Files\Python Projects & Notes File\online_retail_eda_analysis_project\data\raw\retail_dataset.csv", index=False)
+print(f"Dataset fetched successfully! Shape: {df.shape}")  # (rows, columns)
 
-print("Data Extracted and Saved to CSV file successfully!")
+# ── Step 3: Save to CSV ─────────────────────────────────────────────────────
+df.to_csv(OUTPUT_FILE, index=False)
+
+print(f"Data saved to: {OUTPUT_FILE}")

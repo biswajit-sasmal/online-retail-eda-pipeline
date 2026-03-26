@@ -12,7 +12,8 @@ A concise data analysis project that explores retail sales transactions to surfa
 4. [Key Insights](#4-key-insights)
 5. [Recommendations](#5-recommendations)
 6. [Dataset Acknowledgement](#6-dataset-acknowledgement)
-7. [Thank You](#7-thank-you)
+7. [Contact Information](#7-contact-information)
+8. [Thank You](#7-thank-you)
 
 ---
 
@@ -54,7 +55,7 @@ The workflow includes cleaning raw data, exploratory data analysis (EDA), visual
 | Jupyter Notebook | Interactive analysis and visualization |
 | pandas | Data manipulation and cleaning |
 | Matplotlib / Seaborn | Data visualization |
-
+| Git & Github | Version Control & Project Collaboration |
 ---
 
 ## 3. How to Run This Project
@@ -120,7 +121,16 @@ The dataset used is the **Online Retail Dataset** from the [UCI Machine Learning
 
 ---
 
-## 7. Thank You
+## 7. Contact Information   
+For questions, suggestions, or collaborations, please reach out:
+
+**BISWAJIT SASMAL**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/biswajitsasmal/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:biswajitsasmal.data@gmail.com)
+
+---
+
+## 8. Thank You
 
 Thank you for taking the time to explore this project! 🙏
 

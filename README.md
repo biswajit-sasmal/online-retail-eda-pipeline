@@ -41,11 +41,12 @@ The workflow includes cleaning raw data, exploratory data analysis (EDA), visual
 │   └── RFM_Analysis.ipynb    ← Customer segmentation using RFM
 ├── reports/                  ← Output CSV and summary files
 └── scripts/
-    ├── extract.py            ← Data extraction
-    └── clean.py              ← Data cleaning and preprocessing
+|    ├── extract.py            ← Data extraction
+|    └── clean.py              ← Data cleaning and preprocessing
+├── presentation/
+    └── online_retail_sales_insights.pptx     ←  presentation slides summarizing findings   
 ```
 
----
 
 ## 2. Tools & Technology
 
